@@ -1,15 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Sidebar } from './components/Sidebar'
+import { MessagesList } from './components/MessagesList'
+import { AddMessage } from './components/AddMessage'
 
 function App() {
 	return (
-		<div id="container">
-			<aside id="sidebar">Users</aside>
-			<section id="main">
-				<section id="messages-list">Messages list</section>
-				<section id="new-message">New message</section>
-			</section>
+    <div id="container">
+      <Sidebar />
+      <section id="main">
+        <MessagesList />
+        <AddMessage />
+        <section/>
 		</div>
 	);
 }
